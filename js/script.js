@@ -79,7 +79,7 @@ $(document).ready(function() {
 
 
 var mobile_button = $("#mobile-calculate-button");
-    button.click(function() {
+    mobile_button.click(function() {
     // get all of the values in the form fields
     var age = $("#age").val()
     var weight = $("#weight").val()
@@ -90,9 +90,12 @@ var mobile_button = $("#mobile-calculate-button");
 
     // if any are left empty, prompt the error to fill out all of them
     if (age === "" || weight === "" || height === ""){
-      alert("Please fill out all fields to calculate your macros!")
+      $(".modal-results").css("display", "none")
+      $(".modal-no-results").css("display", "")
     } 
     else {
+      $(".modal-no-results").css("display", "none")
+      $(".modal-results").css("display", "")
       // calculate Basal Metabolic Rate (BMR) based on gender
       if (gender === "Male"){
         var bmr = 66 + (13.7*(weight*0.453592)) + (5*(height*2.54)) - (6.8*age)
