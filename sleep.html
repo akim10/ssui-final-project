@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <title>Sleep</title>
+  <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+  maximum-scale=1.0, user-scalable=no" /> 
+</head>
+
+  <!-- ART AND ICONS TAKEN FROM FLATICON.COM -->
+
+  <body>
+    <!-- side nav code used from https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+    <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Lifting</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="sleep.html">Sleep</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+
+    <div class="menu" onclick="openNav()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <!-- end side nav code -->
+
+
+    <!-- SLEEP INTRO SECTION -->
+    <div class="sleep section"> 
+      <div class="container-fluid">
+        <div class="intro row">
+
+          <div class="col-md-7 col-xs-12">
+            <h1 class="intro-title"> Sleep </h1>
+            <div class="underscore"></div><br />
+            <p class="intro-text"> Likely the most neglected aspect of muscle growth, sleep is essential for building muscle and recovering. </p>
+          </div>
+
+          <div class="col-md-5 col-xs-12">
+            <p class="image-center"><img id="bed" src="images/bed.png" /></p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- END SLEEP INTRO SECTION -->
+
+    <!-- 1: SLEEP IS RECOVERY SECTION -->
+    <div class="recovery section">
+      <div class="container-fluid">
+        <div class="recovery-intro">
+          <div class="row">
+            <div class="col-lg-6 push-lg-3">
+              <h1 data-aos="fade-up" class="section-title"> Sleep is Recovery </h1><br>
+              <p data-aos="fade-up" class="section-text">
+                Sleep is when your muscles recover and rebuild. It will make you feel more ready to lift and keep you healthy. Get lots of it!
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-none d-lg-block">
+              <br />
+              <img data-aos="fade-up" id="cycle" src="images/cycle.png" />
+            </div>
+            <div class="col-12 d-block d-lg-none">
+              <br />
+              <img data-aos="fade-up" id="cycle-mobile" src="images/cycle-mobile.png" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END 1: SLEEP IS RECOVERY SECTION -->
+
+    <!-- 2: QUOTE SECTION -->
+    <div class="quote section">
+      <div class="container-fluid">
+        <div class="quote-intro">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="section-title" data-aos="fade-right"> "Rest, let your body relax and grow. Work up gradually and don't blow it” </h1> <br />
+            </div>
+            <div data-aos="fade-left" class="col-lg-12">
+              <p class="arnold"> - Arnold Schwarzenegger </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 2: QUOTE SECTION -->
+
+    <!-- 4: PROTEIN POWDER SECTION -->
+    <div class="end section">
+      <div class="container-fluid">
+        <div class="end-intro">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="section-title" data-aos="fade-right"> That's It. </h1> <br />
+              <p class="section-text" data-aos="fade-right">
+                Lifting. Nutrition. Sleep.
+                <br /><br />
+                These three things will have you on your way to all kinds of gainz. 
+                <br /><br />
+                Thanks for reading.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 4: PROTEIN POWDER SECTION -->
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- AOS library for animations on scroll: https://github.com/michalsnik/aos -->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+
+</html>

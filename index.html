@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <title>Lifting</title>
+  <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+  maximum-scale=1.0, user-scalable=no" /> 
+</head>
+
+  <!-- ART AND ICONS TAKEN FROM FLATICON.COM -->
+
+  <body>
+    <!-- side nav code used from https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+    <script>
+      // Set the width of the side navigation to 250px
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      // Set the width of the side navigation to 0
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Lifting</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="sleep.html">Sleep</a>    </div>
+
+    <!-- Use any element to open the sidenav -->
+
+    <div class="menu" onclick="openNav()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <!-- end side nav code -->
+
+    <!-- LIFTING INTRO SECTION -->
+    <div class="lifting section"> 
+      <div class="container-fluid">
+        <div class="intro row">
+
+          <div class="col-lg-7 col-xs-12">
+            <h1 class="intro-title"> Lifting </h1>
+            <div class="underscore"></div><br />
+            <p class="intro-text">This guide serves as a high-level introduction to the building blocks of gainz: working out, good nutrition, and sleep. </p>
+          </div>
+
+          <div class="col-lg-5 col-xs-12">
+            <p class="image-center"><img id="barbell" src="images/barbell-1.png" /></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END LIFTING INTRO SECTION -->
+
+    <!-- 1: GOALS SECTION -->
+    <div class="goals section">
+      <div class="container-fluid">
+        <div class="goals-intro">
+
+          <div class="row">
+            <div class="col-lg-6 push-lg-3">
+              <h1 class="section-title"> Setting a Goal </h1>
+              <p class="section-text">It's important to establish what your goals are with working out. At a high level, goals can be split up into either <strong>strength</strong> or <strong>hypertrophy</strong> (size).</p>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="row">
+
+            <div class="col-6" data-aos="fade-right">
+              <div class="row strength">
+
+                <div class="col-md-6">
+                  <h3> Strength </h3>
+                  <br />
+                  <img id="blue-barbell" src="images/blue-barbell.png" />
+                </div>
+
+                <div class="col-md-6 list-left">
+                  <br class="d-block d-md-none" />
+                  <p class="list-item"> <strong>Less</strong> Repetitions </p>
+                  <br />
+                  <p class="list-item"> <strong>Longer</strong> Rest</p>
+                  <br />
+                  <p class="list-item"> <strong>Higher</strong> Weight </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-6" data-aos="fade-left">
+              <div class="row hypertrophy">
+
+                <div class="col-md-6 d-block d-md-none">
+                  <h3> Hypertrophy </h3>
+                  <img id="hypertrophy" src="images/hypertrophy.png" />
+                </div>
+
+                <div class="col-md-6 list-right">
+                  <p class="list-item"> <strong>More</strong> Repetitions </p>
+                  <br />
+                  <p class="list-item"> <strong>Shorter</strong> Rest</p>
+                  <br />
+                  <p class="list-item"> <strong>Lower</strong> Weight </p>
+                </div>
+
+                <div class="col-md-6 d-none d-md-block">
+                  <h3> Hypertrophy </h3>
+                  <br />
+                  <img id="hypertrophy" src="images/hypertrophy.png" />
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END 1: GOALS SECTION -->
+
+    <!-- 2: FOLLOWING THROUGH SECTION -->
+    <div class="following-through section">
+      <div class="container-fluid">
+        <div class="following-through-intro">
+          <div class="row"> 
+            <div class="col-lg-3">
+              <img data-aos="fade-up-right" data-aos-delay="250" data-aos-offset="300"  data-aos-easing="ease-out" data-aos-duration="800" id="sun" src="images/sun.png">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="section-title" data-aos="fade-up"> Following Through </h1> <br />
+              <p class="section-text" data-aos="fade-up">It’s a new day and you’ve set a new goal. <br />
+              Now you can start to follow through with it. <br />
+              To work towards your goal, it's recommended that you follow some sort of routine or program. Below are some popular programs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 2: FOLLOWING THROUGH SECTION -->
+
+    <!-- 3: PICKING A PROGRAM SECTION -->
+    <div class="program-routine">
+      <div class="section">
+        <div class="container-fluid">
+          <div class="program-intro">
+            <div class="row">
+              <div class="col-md-7">
+                <h1 class="section-title" data-aos="fade-up"> Picking a Program </h1> <br />
+                <p class="section-text" data-aos="fade-up">
+                  <strong>Starting Strength</strong> is a simple, long-term system for getting stronger over time.
+                  <br /><br />
+                  <strong>Push-Pull-Legs</strong> is more of a template than a program, but serves as a great intermediate hypertrophy building routine.
+                  <br /><br />
+                  <strong>Wendler’s 5/3/1</strong> is a full-body, 3 day a week routine for novice lifters.
+                  <br /><br />
+                  These are just some of the many programs out there! If none of these interest you, I’m sure you’ll find one that fits.
+                </p>
+              </div>
+              <div id="calendar-wrap" class="fixed col-md-5 image-center">
+                <p><img id="calendar" src="images/calendar.png" data-aos="fade-left"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END 3: PICKING A PROGRAM SECTION -->
+
+      <!-- 4: YOUR OWN ROUTINE SECTION -->
+      <div class="section">
+        <div class="container-fluid">
+          <div class="program-intro">
+            <div class="row">
+              <div class="col-md-7">
+                <h1 class="section-title" data-aos="fade-up"> Your Own Routine </h1> <br />
+                <p class="section-text" data-aos="fade-up">
+                  You don't have to follow a predefined program though! 
+                  <br /><br />
+                  Personally, I created my own routine and have been following it for close to two years. It's good to experiment slightly and figure out what works best for you.
+                  <br /><br />
+                  If you decide to create your own routine, remember to follow the core attributes of your goal! 
+                </p>
+              </div>
+              <div id="calendar-wrap" class="fixed col-md-5 image-center">
+                <p><img id="clipboard" src="images/clipboard.png" data-aos="fade-left"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END 4: YOUR OWN ROUTINE SECTION -->
+    </div>
+
+    <!-- 5: GENERAL TIPS SECTION -->
+    <div class="tips section">
+      <div class="container-fluid">
+        <div class="tips-intro">
+          <div class="row">
+            <div class="col-lg-6 push-lg-3">
+              <h1 class="section-title" data-aos="fade-up"> General Tips </h1> <br />
+              <p class="section-text" data-aos="fade-up">
+                The next few sections are just general tips to keep in mind while at the gym. Even though these just fall under general tips, each one of these is extremely important!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 5: GENERAL TIPS SECTION -->
+
+    <!-- 6: STAY HYDRATED SECTION -->
+    <div class="hydrate section">
+      <div class="container-fluid">
+        <div class="hydrate-intro">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="section-title" data-aos="fade-up"> Staying Hydrated </h1> <br />
+              <p class="section-text" data-aos="fade-up">
+                Bring a water bottle to the gym and drink some water between each set or every other set. 
+                <br /><br />
+                Staying hydrated is not just important in general, but is essential for keeping up your performance in the gym. Studies have shown that dehydration can result in up to a <strong>30% decrease</strong> in gym performance.</p>
+            </div>
+            <div class="col-md-6 image-center">
+              <p><img id="water" src="images/water.png" data-aos="fade-left"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 6: STAY HYDRATED SECTION -->
+
+    <!-- 7: G.O.O.D. MUSIC SECTION -->
+    <div class="music section">
+      <img id="left-earbud" src="images/left-earbud.png" data-aos="fade-right">
+      <img id="right-earbud" src="images/right-earbud.png" data-aos="fade-let">
+      <div class="container-fluid">
+        <div class="music-intro">
+          <div class="row">
+            <div class="col-lg-6 push-lg-3">
+              <h1 class="music-title section-title" data-aos="fade-up"> G.O.O.D. Music </h1> <br />
+              <p class="section-text" data-aos="fade-up">
+                A good playlist with some high-energy songs can be the difference betwen 10 and 12 reps, 135lbs or 150lbs, and a good or great workout.
+                <br /><br />
+                The type of music that gets you pumped up varies from person to person, so experiment! Here’s one of my favorite playlists:
+              </p>
+              <iframe class="tall-shadow" id="playlist" src="https://open.spotify.com/embed/user/andrewkim124/playlist/2eAda1hLQfAy0GzGBkoB4k" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 7: G.O.O.D. MUSIC SECTION -->
+
+    <!-- 8: MIND MUSCLE CONNECTION SECTION -->
+    <div class="mind section">
+      <div class="container-fluid">
+        <div class="mind-intro">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="section-title" data-aos="fade-up"> Mind-Muscle Connection </h1> <br />
+              <p class="section-text" data-aos="fade-up">
+                Lifting is more than just a physical activity. There is a level of focus and concentration that is required and, if you want to maximize your gainz, establishing a mind muscle connection is key.
+                <br /><br />
+                Essentially mind-muscle connection is focusing on the muscle that is being worked while you are performing the lift.
+                <br /><br />
+                Learn more about mind-muscle connection <a target="_blank" class="link" href="https://www.bodybuilding.com/fun/4-tips-to-help-train-brain-massive-gains-mind-muscle-connection.htm">here</a>.
+              </p>
+            </div>
+            <div class="col-lg-6 image-center">
+              <p class="d-none d-lg-block"><img id="thought" src="images/brain-thought.png" data-aos= "zoom-in-up" data-aos-delay="300" data-aos-offset="0" data-aos-duration="1200"></p>
+              <p><img id="brain" src="images/brain.png" data-aos="fade-left"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 8: MIND MUSCLE CONNECTION SECTION -->
+
+    <!-- 9: STICK WITH IT SECTION -->
+    <div class="stick section">
+      <div class="container-fluid">
+        <div class="stick-intro">
+          <div class="row">
+            <div class="col-lg-6 push-lg-3">
+              <h1 class="section-title" data-aos="fade-up"> Stick With It </h1> <br />
+              <p class="section-text" data-aos="fade-up">
+              Starting up is easy, sticking with it is hard.
+              <br />
+              Make lifting just another part of your day; just like brushing your teeth is a staple part of your day, lifting should be too. This mindset builds discipline and will keep you in the gym making all kinds of gainz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 9: STICK WITH IT SECTION -->
+
+    <!-- NEXT: NUTRITION SECTION -->
+    <div class="next-nutrition">
+      <div class="container-fluid">
+        <div class="next-nutrition-intro">
+          <div class="row">
+            <div class="col-lg-9">
+              <h1 class="section-title" data-aos="fade-right"> Next: Nutrition </h1> <br />
+              <p class="section-text" data-aos="fade-right">
+              Read along to learn about Nutrition: the fuel to your gainz
+              </p>
+            </div>
+            <div class="col-lg-3">
+              <p class="image-center"><a href="nutrition.html"><button type="button" class="short-shadow btn btn-info btn-circle btn-xl"><i class="fa fa-long-arrow-right fa-lg"></i></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NEXT: NUTRITION SECTION -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- AOS library for animations on scroll: https://github.com/michalsnik/aos -->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+
+</html>

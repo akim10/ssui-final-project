@@ -1,0 +1,959 @@
+html{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body{
+  font-family: 'Roboto', "Helvetica-Neue", Helvetica, Arial, Sans-Serif;
+}
+
+/* Side Nav Menu Section ------------------------------------------------- */
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 201; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    /*color: black;*/
+    text-decoration: none;  
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.menu{
+  cursor: pointer;
+  z-index: 200;
+  position: fixed;
+  padding-left: 3%;
+  padding-top: 2.5%;
+}
+
+/* End of Side Nav Menu Section -------------------------------------------- */
+
+
+/* Intro Sections (the big screen at the top of each page) Section --------- */
+
+.intro{
+  padding: 10%;
+  color: white;
+}
+
+.intro-title{
+  font-size: 7.5em;
+}
+
+.intro-text{
+  font-size: 24px;
+}
+
+.underscore{
+  height: 8px;
+  width: 115px;
+  background-color: #ffffff;
+}
+
+/* End of Intro Sections Section --------------------------------------- */
+
+
+/* Sections (each colored part with text on the page) Section -------------- */
+
+.section{
+  height: 629px;
+  color:white;
+}
+
+.section-title{
+  font-size: 52px;
+}
+
+.section-text{
+  font-size: 20px;
+}
+
+/* End of Sections Section -------------------------------------------- */
+
+
+/* Lifting Section ------------------------------------------------- */
+
+.lifting{
+  background-color: #5DAF7C;
+}
+
+#barbell{
+  width: 100%;
+  padding-top: 25%;
+  -webkit-animation: rep 1.7s ease-in-out infinite;
+  animation: rep 1.7s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes rep {
+    0% { transform: translateY(0); }
+    25% {transform: translateY(-30px);}
+    100% { transform: translateY(0); }
+}
+@keyframes rep {
+    0% { transform: translateY(0); }
+    25% {transform: translateY(-30px);}
+    100% { transform: translateY(0); }
+}
+
+@media screen and (max-width: 991px){
+  #barbell{
+    width: 55%;
+    padding-top: 9%;
+  }
+}
+
+/* End of Lifting Section ------------------------------------------------- */
+
+
+/* Goals Section ------------------------------------------------- */
+
+.goals{
+  background-color: #67D0D7;
+}
+
+.goals-intro{
+  padding: 4.5%;
+  padding-top: 7.5%;
+  text-align: center;
+}
+
+#blue-barbell{
+  width: 80%;
+}
+
+#hypertrophy{
+  width: 35%; 
+}
+
+.strength, .hypertrophy{
+  padding-top: 4%;
+}
+
+.list-left{
+  text-align: right;
+}
+
+.list-left .list-item{
+  padding-right: 15px;
+}
+
+.list-right .list-item{
+  padding-left: 15px;
+}
+
+.list-right{
+  text-align: left;
+  border-left: 1px solid white;
+}
+
+.list-item{
+  font-size: 20px;
+}
+
+/* End of Goals Section ------------------------------------------------- */
+
+
+/* Following Through Section ----------------------------------------------- */
+
+.following-through{
+  background: url("../images/landscape.png") left bottom;
+  background-repeat: repeat-x;
+  background-color: #89D4F5;
+}
+
+.following-through-intro{
+  padding-top: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: center;
+}
+
+#sun{
+  position: absolute;
+}
+
+/* End of Following Through Section ---------------------------------------- */
+
+
+/* Picking a Program & Your Own Routine Sections --------------------------- */
+
+.program-routine{
+  background: #2f94c0; /* Old browsers */
+  background: -moz-linear-gradient(top, #2f94c0 0%, #329cca 27%, #36a5d6 47%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2f94c0 0%,#329cca 27%,#36a5d6 47%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2f94c0 0%,#329cca 27%,#36a5d6 47%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.program-intro{
+  padding-top: 8%;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.program-intro .section-text{
+  font-size: 18px;
+}
+
+.image-center{
+  text-align:center;
+}
+
+#calendar{
+  width: 83%;
+  padding-top: 10%;
+  padding-left: 15%;
+}
+
+#clipboard{
+  width: 83%;
+  padding-left: 15%;
+}
+
+/* End of Picking a Program Section ---------------------------------------- */
+
+
+/* General Tips Section ----------------------------------------------- */
+
+.tips{
+  background-color: #686971;
+}
+
+.tips-intro{
+  padding-top: 15%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: center;
+}
+
+/* End of General Tips Section ---------------------------------------- */
+
+
+/* Stay Hydrated Section ----------------------------------------------- */
+
+.hydrate{
+  background-color: #CC6666;
+}
+
+.hydrate{
+  padding-top: 10%;
+  padding-left: 9%;
+  text-align: left;
+}
+
+#water{
+  width: 25%;
+}
+
+/* End of Stay Hydrated Section ---------------------------------------- */
+
+
+/* G.O.O.D. MUSIC Section ----------------------------------------------- */
+
+.music{
+  background-color: #66CC8C;
+}
+
+.music-intro{
+  padding-top: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+}
+
+.music-title{
+  text-align: center;
+}
+
+#right-earbud{
+  margin-top: 8%;
+  right:0;
+  position: absolute;
+  width: 10%;
+  animation: hover 4s ease-in-out infinite;
+}
+
+#left-earbud{
+  margin-top: 13%;
+  left:0;
+  position: absolute;
+  width: 10%;
+  animation: hover 3.3s ease-in-out infinite;
+}
+
+@-webkit-keyframes hover {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-15px);}
+    100% { transform: translateY(0); }
+}
+@keyframes hover {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-15px);}
+    100% { transform: translateY(0); }
+}
+
+#playlist{
+  margin-top: 30px;
+  height: 80px;
+  width: 100%;
+}
+
+.tall-shadow{
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(97,97,97,1);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(97,97,97,1);
+  box-shadow: 5px 5px 20px 0px rgba(97,97,97,1);
+}
+/* End of G.O.O.D. MUSIC Section ---------------------------------------- */
+
+
+/* Mind Muscle Connection Section ----------------------------------------------- */
+
+.mind{
+  background-color: #8E6E6E;
+}
+
+.mind-intro{
+  padding-top: 8%;
+  padding-left: 9%;
+  text-align: left;
+}
+
+.link{
+  color:white;
+  text-decoration: underline;
+  font-weight: 200;
+}
+
+.link:hover{
+  color:white;
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+#brain{
+  width: 60%;
+}
+
+#thought{
+  width: 30%;
+  -webkit-animation: hover 3s ease-in-out infinite;
+  animation: hover 3s ease-in-out infinite;
+}
+
+/* End of Mind Muscle Connection Section ---------------------------------------- */
+
+
+/* Stick With It Section ---------------------------------------- */
+
+.stick{
+  background-color: #262626;
+}
+
+.stick-intro{
+  padding-top: 15%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: center;
+}
+
+/* End of Stick With It Section ---------------------------------------- */
+
+
+/* Next: Nutrition Section ---------------------------------------- */
+
+.next-nutrition{
+  height: 60vh;
+  background-color: #336595;
+}
+
+.next-nutrition-intro{
+  color:white;
+  padding: 8%;
+  text-align: left;
+}
+
+.btn-circle.btn-xl {
+    width: 90px;
+    height: 90px;
+    padding: 10px 16px;
+    border-radius: 45px;
+    border:none;
+    font-size: 24px;
+    line-height: 1.33;
+    margin-top: 8%;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    border:none;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.btn-circle.btn-xl:hover {
+    background-color: #63DBF4;
+    cursor: pointer;
+}
+
+
+/* End of Next: Nutrition Section ---------------------------------------- */
+
+
+/* Nutrition Intro Section ---------------------------------------- */
+
+.nutrition{
+  background-color: #9A4141;
+}
+
+#egg{
+  width: 90%;
+  -webkit-animation: hover 3s ease-in-out infinite;
+  animation: hover 3s ease-in-out infinite;
+}
+
+/* End of Nutrition Intro Section ---------------------------------------- */
+
+
+/* Body Goals Section ------------------------------------------------- */
+
+.body-goals{
+  background-color: #D76767;
+}
+
+.body-goals-intro{
+  padding: 4.5%;
+  text-align: center;
+}
+
+.line{
+  width: 90%;
+  background-color:white;
+  height: 4px;
+  margin-left: 5%;
+}
+
+.cutting{
+  padding-top: 4%;
+  text-align: left;
+}
+
+.third{
+  display:inline;
+  width: 30%;
+}
+
+.left-align{
+  text-align:left;
+}
+
+.center-align{
+  text-align:center;
+}
+
+.right-align{
+  text-align:right;
+  padding-right: 15%;
+}
+
+.body-recomp{
+  padding-left: 25%;
+}
+
+.bulking{
+  padding-left: 40%;
+}
+
+#line{
+  width: 100%;
+}
+
+/* End of Body Goals Section ---------------------------------------------- */
+
+
+/* Macronutrients Section ---------------------------------------------- */
+
+.macros{
+  background-color: #8A9FB2;
+}
+
+.macros-intro{
+  padding-top: 5%;
+  padding-left: 9%;
+  text-align: left; 
+}
+
+.calculate{
+  background-color: #597893;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  color: white;
+  border-radius: 0px;
+  border: none;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.calculate:hover{
+  cursor: pointer;
+}
+
+.short-shadow{
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(60,60,60,1);
+  -moz-box-shadow: 2px 2px 8px 0px rgba(60,60,60,1);
+  box-shadow: 2px 2px 8px 0px rgba(60,60,60,1);
+}
+
+.results{
+  color: #41596D;
+  width: 70%;
+  margin-left: 15%;
+  padding-left: 7.5%;
+  padding-right: 10%;
+  padding-top: 10%;
+  margin-top: 25%;
+}
+
+.results-wrapper{
+  display: none;
+}
+
+.modal-title, .modal-body{
+  color: black;
+}
+
+.serving{
+  text-align: right;
+}
+
+.nutrients{
+  text-align: left;
+}
+
+/* End of Macronutrients Section ------------------------------------------- */
+
+
+/* Supplements Section ------------------------------------------- */
+
+.supplements{
+  background-color: #38A6D1;
+}
+
+.supplements-intro{
+  padding-top: 13%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: center;
+}
+
+/* End of Supplements Section ------------------------------------------- */
+
+
+/* Protein Section ------------------------------------------- */
+
+.protein{
+  background-color: #3499C0;
+}
+
+.protein-intro{
+  padding-top: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: left;
+}
+
+#powder{
+  width: 70%;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+/* End of Protein Section ------------------------------------------- */
+
+
+/* Vitamins Section ------------------------------------------- */
+
+.vitamins{
+  background-color: #5BA1BD;
+}
+
+.vitamins-intro{
+  padding-top: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: left;
+}
+
+#pills{
+  width: 65%;
+  -webkit-animation: hover 3s ease-in-out infinite;
+  animation: hover 3s ease-in-out infinite;
+}
+
+/* End of Vitamins Section ------------------------------------------- */
+
+
+/* Next: Sleep Section ---------------------------------------- */
+
+.next-sleep{
+  height: 60vh;
+  background-color: #953333;
+}
+
+.next-sleep-intro{
+  color:white;
+  padding: 8%;
+  text-align: left;
+}
+
+.btn-circle.btn-xl {
+  width: 90px;
+  height: 90px;
+  padding: 10px 16px;
+  border-radius: 45px;
+  border:none;
+  font-size: 24px;
+  line-height: 1.33;
+  margin-top: 8%;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  border:none;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.btn-circle.btn-xl:hover {
+  background-color: #63DBF4;
+  cursor: pointer;
+}
+
+#sleep-btn{
+  background-color: #D93E3E;
+}
+
+#sleep-btn:hover{
+  background-color: #F05252;
+}
+
+
+/* End of Next: Sleep Section ---------------------------------------- */
+
+
+/* Sleep Intro Section ---------------------------------------- */
+
+.sleep{
+  background-color: #336595;
+}
+
+#bed{
+  width: 90%;
+  -webkit-animation: hover 3s ease-in-out infinite;
+  animation: hover 3s ease-in-out infinite;
+}
+
+/* End of Sleep Intro Section ---------------------------------------- */
+
+
+/* Sleep is Recovery Section ---------------------------------------- */
+
+.recovery{
+  background-color: #324168;
+}
+
+.recovery-intro{
+  text-align: center;
+  padding-top: 3%;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+}
+
+#cycle{
+  width: 50%;
+}
+
+#cycle-mobile{
+  width: 60%;
+}
+
+/* End of Sleep is Recovery Section ---------------------------------------- */
+
+
+/* Quote Section -------------------------------------------------------- */
+
+.quote{
+  background-color: #191919;
+}
+
+.quote-intro{
+  text-align: left;
+  padding-top: 18%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.arnold{
+  text-align:right;
+  font-size: 30px;
+}
+
+/* End of Quote Section ------------------------------------------------ */
+
+
+/* Final Section -------------------------------------------------------- */
+
+.end{
+  background-color: rgba(61, 198, 81, 76);
+  opacity: 0.76;
+}
+
+.end-intro{
+  padding-top: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: left;
+}
+
+/* End of Final Section ------------------------------------------------ */
+
+
+/* resizing some images to fit slightly smaller viewports*/
+@media only screen and (max-width: 991px) {
+  #brain{
+    width: 40%;
+  }
+
+  #egg{
+    width: 30%;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  
+  /*scale down the font size in each section on smaller viewports*/
+  .intro-title{
+    font-size: 6.5em;
+  }
+
+  .section-title{
+    font-size: 36px;
+  }
+
+  .section-text{
+    font-size: 16px;
+  }
+
+  /*setting a goal section*/
+
+  .strength, .hypertrophy{
+    padding-top: 0%;
+  }
+
+  #blue-barbell{
+    width: 60%;
+  }
+
+  #hypertrophy{
+    width: 25%;
+  }
+
+  .list-left{
+    text-align: center;
+  }
+
+  .list-left .list-item{
+    font-size: 16px;
+    padding-right: none;
+  }
+
+  .list-right .list-item{
+    font-size: 16px;
+    padding-left: none;
+  }
+
+  .list-right{
+    text-align: center;
+    border-left: 1px solid white;
+  }
+
+  /* end of setting a goal section*/
+
+  /*program and routine sections*/
+
+  .program-intro .section-text{
+    font-size: 16px;
+  }
+
+  #calendar{
+    width: 40%;
+    padding-top: 5%;
+    padding-left: 0%;
+  }
+
+  #clipboard{
+    width: 45%;
+    padding-top: 5%;
+    padding-left: 0%;
+  }
+
+  /*end of program and routine sections*/
+
+  /*hydration section*/
+
+  .hydrate{
+    padding: 5%;
+    padding-top: 8%;
+  }
+
+  #water{
+    width: 17%;
+  }
+
+  .hydrate-intro .section-title{
+    text-align: center;
+  }
+
+  /*end of hydration section*/
+
+  /*music section*/
+
+  .music{
+    padding: 5%;
+    padding-top: 15%;
+  }
+
+  .music-intro .section-title{
+    text-align: center;
+  }
+
+  /*end of music section*/
+
+
+  /*mind-muscle connection section*/
+
+  .mind-intro{
+    padding: 5%;
+    padding-top: 15%;
+  }
+
+  .mind-intro .section-title{
+    text-align: center;
+  }
+
+  /*end of mind-muscle connection section*/
+
+  /*nutrition section*/
+
+  #egg{
+    width: 45%;
+  }
+
+  /*end of nutrition section*/
+
+  /*protein powder section*/
+  #powder{
+    width: 35%;
+    padding-top: 5%;
+    padding-left: 0%;
+  }
+
+  /*end of protein powder section*/
+
+  /*pills section*/
+  #pills{
+    width: 35%;
+    padding-top: 0%;
+    padding-left: 0%;
+  }
+  /*end of pills section*/
+
+  /*sleep section*/
+  #bed{
+    width: 50%;
+    margin-top: 10%;
+  }
+  /*end of sleep section*/
+
+}
+
+
+@media only screen and (max-width: 540px) {
+
+  .intro-title{
+    font-size: 4.5em;
+  }
+
+  /*setting goals section*/
+  #hypertrophy{
+    margin-bottom: 15%;
+  }
+  /*end of setting goals section*/
+
+  /*hydration section*/
+  #water{
+    margin-top: 15%;
+    width: 20%;
+  }
+  /*end of hydration section*/
+
+  /*sleep is recovery section*/
+  #cycle-mobile{
+    width: 80%;
+  }
+  /*end of sleep is recovery section*/
+}
+
+@media only screen and (min-width: 541px) and (max-width: 769px){
+  /*setting goals section*/
+  #hypertrophy{
+    margin-bottom: 5%;
+  }
+  /*end of sleep is recovery section*/
+}

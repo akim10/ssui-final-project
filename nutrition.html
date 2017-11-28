@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <title>Nutrition</title>
+  <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+  maximum-scale=1.0, user-scalable=no" /> 
+</head>
+
+  <!-- ART AND ICONS TAKEN FROM FLATICON.COM -->
+
+  <body>
+    <!-- side nav code used from https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+    <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Lifting</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="sleep.html">Sleep</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+
+    <div class="menu" onclick="openNav()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <!-- end side nav code -->
+
+    <!-- NUTRITION INTRO SECTION -->
+    <div class="nutrition section"> 
+      <div class="container-fluid">
+        <div class="intro row">
+
+          <div class="col-lg-7 col-xs-12">
+            <h1 class="intro-title"> Nutrition </h1>
+            <div class="underscore"></div><br />
+            <p class="intro-text">The second piece. Good Nutrition will fuel your gainz and help you recover to come back bigger and stronger. </p>
+          </div>
+
+          <div class="col-lg-5 col-xs-12">
+            <p class="image-center"><img id="egg" src="images/fried-egg.png" /></p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- END NUTRITION INTRO SECTION -->
+
+    <!-- 1: BODY GOALS SECTION -->
+    <div class="body-goals section">
+      <div class="container-fluid">
+        <div class="body-goals-intro">
+
+          <div class="row">
+            <div class="col-lg-4 push-lg-4">
+              <h1 class="section-title"> Body Goals </h1><br>
+              <p class="section-text">Like your lifting, you can have a goal with your nutrition. Learn more below.</p>
+            </div>
+          </div>
+
+          <br /><br />
+          <div class="row">
+            <div class="col-12">
+              <img id="line" src="images/line.png" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4 cutting" data-aos="fade-right">
+              <h3 class="left-align"> Cutting </h3>
+              <br>
+              <div>
+                <p> - lose weight</p>
+                <p> - more muscle definition </p>
+                <p> - some muscle and strength loss </p>
+              </div>
+            </div>
+            <div class="col-4 cutting" data-aos="fade-up">
+              <h3 class="center-align"> Body Recomp </h3>
+              <br>
+              <div class="body-recomp">
+                <p> - lose fat</p>
+                <p> - gain muscle </p>
+                <p> - much slower process </p>
+              </div>
+            </div>
+            <div class="col-4 cutting" data-aos="fade-left">
+              <h3 class="right-align"> Bulking </h3>
+              <br>
+              <div class="bulking">
+                <p> - gain weight</p>
+                <p> - some fat gain </p>
+                <p> - more muscle and strength </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END 1: BODY GOALS SECTION -->
+
+    <!-- 2: MACRONUTRIENTS SECTION -->
+    <div class="macros section">
+      <div class="container-fluid">
+        <div class="macros-intro">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="section-title" data-aos="fade-right"> Macronutrients </h1> <br />
+
+              <p class="section-text" data-aos="fade-right">
+                Carbs, fats, and proteins—the three basic components of every diet. Managing the proportions of these nutrients can make reaching your body goal a lot more effective. 
+                <br>
+                Calculate your macro needs below:
+              </p>
+              <div class="form-group row" data-aos="fade-right">
+                <div class="col-md-3 col-6">
+                  <label for="gender">Gender</label>
+                  <select class="form-control" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+                <div class="col-md-3 col-6">
+                  <label for="age">Age</label>
+                  <!-- onkeypress code makes sure only numbers are able to be entered into this field -->
+                  <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="age">
+                </div>
+                <div class="col-md-3 col-6">
+                  <label for="weight">Weight (lbs)</label>
+                  <!-- onkeypress code makes sure only numbers are able to be entered into this field -->
+                  <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="weight">
+                </div>
+                <div class="col-md-3 col-6">
+                  <label for="height">Height (in)</label>
+                  <!-- onkeypress code makes sure only numbers are able to be entered into this field -->
+                  <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="height">
+                </div>
+              </div>
+
+              <div class="form-group row" data-aos="fade-right">
+
+                <div class="col-md-7 col-6">
+                  <label for="goal">Goal</label>
+                  <select class="form-control" id="goal">
+                    <option>Cutting (Lose Weight)</option>
+                    <option>Body Recomp (Lose Weight, Gain Muscle)</option>
+                    <option>Bulking (Gain Muscle)</option>
+                  </select>
+                </div>
+
+                <div class="col-md-5 col-6">
+                  <label for="activity">Activity Level</label>
+                  <select class="form-control" id="activity">
+                    <option>Little to no exercise</option>
+                    <option>Light Exercise 1-3 days a week</option>
+                    <option>Moderate Exercise 3-5 days a week</option>
+                    <option>Heavy Exercise 6-7 days a week</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+              <div class="modal fade" id="resultsModal" role="dialog" aria-labelledby="resultsModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="resultsModalLabel">Your Macronutrient Results</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-no-results">
+                        <p>Please fill out all fields to calculate your macros!</p>
+                      </div>
+                      <div class="row modal-results">
+
+                        <div class="col-6 serving">
+                          <p id="m-calories"><strong>2700</strong></p>
+                          <br />
+                          <p id="m-protein"><strong>170g</strong></p>
+                          <br />
+                          <p id="m-fat"><strong>75g</strong></p>
+                          <br />
+                          <p id="m-carbs"><strong>385g</strong></p>
+                          <br />
+                        </div>
+
+                        <div class="col-6 nutrients">
+                          <p>Calories</p>
+                          <br />
+                          <p>Protein</p>
+                          <br />
+                          <p>Fat</p>
+                          <br />
+                          <p>Carbs</p>
+                          <br />
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div data-aos="fade-left" class=" col-lg-4 push-lg-1 results-wrapper">
+              <div class="d-none d-lg-block results card short-shadow">
+
+                <div class="row">
+                  <div class="col-6 serving">
+                    <p id="calories"><strong>2700</strong></p>
+                    <br />
+                    <p id="protein"><strong>170g</strong></p>
+                    <br />
+                    <p id="fat"><strong>75g</strong></p>
+                    <br />
+                    <p id="carbs"><strong>385g</strong></p>
+                    <br />
+                  </div>
+                  <div class="col-6 nutrients">
+                    <p>Calories</p>
+                    <br />
+                    <p>Protein</p>
+                    <br />
+                    <p>Fat</p>
+                    <br />
+                    <p>Carbs</p>
+                    <br />
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+          <br>
+          <button id="mobile-calculate-button" type="button" class="d-block d-lg-none short-shadow calculate" data-toggle="modal" data-target="#resultsModal">
+            Calculate Macros
+          </button>
+          <button id="calculate-button" type="button" class="d-none d-lg-block short-shadow calculate">Calculate Macros</button>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- END 2: MACRONUTRIENTS SECTION -->
+
+    <!-- 3: SUPPLEMENTS SECTION -->
+    <div class="supplements section">
+      <div class="container-fluid">
+        <div class="supplements-intro">
+          <div class="row">
+            <div class="col-lg-6 push-lg-3">
+              <h1 class="section-title" data-aos="fade-up"> Supplements </h1> <br />
+              <p class="section-text" data-aos="fade-up">
+              Supplements aren’t entirely necessary, but can be very convenient and useful if you are having trouble reaching your nutrient goals. Some, like protein powder, are great to round off your diet, and others, like steroids, are likely unnecssary and potentially harmful.
+              <br /><br />
+              Let’s go over some popular recommended supplements
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 3: SUPPLEMENTS SECTION -->
+
+    <!-- 4: PROTEIN POWDER SECTION -->
+    <div class="protein section">
+      <div class="container-fluid">
+        <div class="protein-intro">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="section-title" data-aos="fade-up"> Protein Powder </h1> <br />
+              <p class="section-text" data-aos="fade-up">
+                Protein powder is probably the most popular supplement and for good reason.
+                <br /><br />
+                It’s very convenient to get 20-30g of protein in a shake and with a low calorie count. 
+                <br /><br />
+                While protein powder isn’t 100% necessary, it can be a great tool to reach your protein goals if you’e finding it difficult to eat enough!
+              </p>
+            </div>
+            <div class="col-md-6 image-center">
+              <p><img id="powder" src="images/protein.png" data-aos="fade-left"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 4: PROTEIN POWDER SECTION -->
+
+    <!-- 5: VITAMINS SECTION -->
+    <div class="vitamins section">
+      <div class="container-fluid">
+        <div class="vitamins-intro">
+          <div class="row">
+            <div class="col-md-6 image-center">
+              <p><img id="pills" src="images/pills.png" data-aos="fade-right"></p>
+            </div>
+            <div class="col-md-6">
+              <h1 class="section-title" data-aos="fade-up"> Vitamins </h1> <br />
+              <p class="section-text" data-aos="fade-up">
+                The term “vitamins” covers a lot, including amino acids, omega-3 pills, B3 pills, and multivitamins.
+                <br /><br />
+                My take on vitamins is to just take it if you think you need it. In general, I feel that multivitamins are a pretty safe bet. 
+                <br /><br />
+                However, things like amino acids and specific nutrients like Vitamin B3, I would make sure that you need it before you take it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 5: VITAMINS SECTION -->
+
+    <!-- NEXT: SLEEP SECTION -->
+    <div class="next-sleep">
+      <div class="container-fluid">
+        <div class="next-sleep-intro">
+          <div class="row">
+            <div class="col-lg-9">
+              <h1 class="section-title" data-aos="fade-right"> Next: Sleep </h1> <br />
+              <p class="section-text" data-aos="fade-right">
+                The last piece of the puzzle.
+              </p>
+            </div>
+            <div class="col-lg-3">
+              <p class="image-center"><a href="sleep.html"><button data-aos="fade-left" id="sleep-btn" type="button" class="short-shadow btn btn-info btn-circle btn-xl"><i class="fa fa-long-arrow-right fa-lg"></i></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NEXT: SLEEP SECTION -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- AOS library for animations on scroll: https://github.com/michalsnik/aos -->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- code to focus the modal when it is present on the screen -->
+    <script>
+      $('#resultsModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })
+    </script>
+
+  </body>
+
+</html>
